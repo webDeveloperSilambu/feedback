@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Feedback | Login</title>
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+</head>
+<body>
+     <section class="login-container">
+          <form action="/" method="post" class="login-form">
+               <p style="color: red;font-size: 20px;"><%=val %></p>
+               <h1>login</h1>
+               <input type="email" name="logEmail" placeholder="eg : username or email" required>
+               <input type="password" name="logPass"  placeholder="eg : **********" required>
+               <div class="log-btns">
+                    <button type="submit">login</button>
+                    <button><a href="/signup">signup</a></button>
+               </div>
+          </form>
+     </section>
+</body>
+</html>

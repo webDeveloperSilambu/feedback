@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Feedback | Home</title>
+     <link rel="stylesheet" href="/css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+</head>
+<body>
+     <header>
+          <h1>feed back.com</h1>
+          <div class="btns">
+               <button title="create" class="btn"><i class="fa-solid fa-plus"></i></button>
+               <button title="logout" class="logout-btn"><a href="/logout"><i class="fa-solid fa-right-from-bracket"></i></a></button>
+          </div>
+     </header>
+
+     <!-----------------Feedback Form ------------------------------->
+     <section class="create-container">
+          <form action="/home" method="POST">
+               <button type="button" id="close-btn"><i class="fa-solid fa-xmark"></i></button>
+               <h1>feedback form</h1>
+               <div class="input1">
+                    <label for="">Contents </label>
+                    <textarea name="content" id="inp3" cols="30"  rows="10" placeholder="eg : I like for your hard work"></textarea>
+               </div>
+               <button  id="subBtn">submit</button>
+          </form>
+     </section>
+
+
+     <!-----------------------------Home Container-------------------->
+     <section class="container">
+        <% for(let i=0;i<allItems.length;i++){%> 
+               <div class="contents">
+                    <div>
+                         <h1 style="color: yellow;font-size: 1.2rem;"><%= allItems[i].name %></h1>
+                    </div>
+                    <div class="content">
+                         <%= allItems[i].content%>
+                    </div>
+               </div>
+          <%}%>
+     </section>
+
+     <section class="footer">
+          <p>This site was created by <a href="https://github.com/webDeveloperSilambu">silambu</a></p>
+          <p>Copyright @ 2024</p>
+     </section>
+
+
+     <script>
+
+          const subBtn = document.getElementById('subBtn');
+          const inp1 = document.getElementById('inp1');
+          
+          const create_container = document.querySelector('.create-container');
+          const create_btn = document.querySelector('.btn');
+          const close_btn = document.querySelector("#close-btn");
+          const logout_btn = document.querySelector(".logout-btn");
+
+          subBtn.addEventListener('click',(e)=>{
+               inp1.innerHTML.value = '';
+          })
+
+          create_btn.addEventListener('click',()=>{
+               create_container.classList.add('active');
+          })
+
+          close_btn.addEventListener('click',()=>{
+               create_container.classList.remove('active');
+          })
+
+          logout_btn.addEventListener('click',()=>{
+               alert('Are you confirm to logout')
+          })
+     </script>
+</body>
+</html>
