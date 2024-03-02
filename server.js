@@ -3,7 +3,7 @@ const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
 const {v4 : uuid} = require('uuid');
 
-const url = "mongodb+srv://SilambarasanDev:webdevSilambu07@cluster0.vy8omlc.mongodb.net/feedback?retryWrites=true&w=majority";
+const url = "mongodb+srv://SilambarasanDev:yourpassword@cluster0.vy8omlc.mongodb.net/feedback?retryWrites=true&w=majority";
 const client = new MongoClient(url);
 const app = express();
 
@@ -139,11 +139,11 @@ app.get('/logout',(req,res)=>{
      res.render('login',{val : ''});
 })
 
-// app.listen(3000,(req,res)=>{
-//      console.log("Server is Start");
-// })
+app.listen(3000,(req,res)=>{
+     console.log("Server is Start");
+})
 
-module.exports = app;
+//module.exports = app;
 
 
 
