@@ -1,0 +1,287 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     border: none;
+     outline: none;
+     background: none;
+     text-decoration: none;
+     box-sizing: border-box;
+}
+
+body{
+     background-color: #000000e8;
+}
+
+header{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     border-bottom:1px solid grey;
+     color: #fff;
+}
+
+header h1{
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     font-weight: 400;
+}
+
+
+
+header button{
+     cursor: pointer;
+     color: #fff;
+     font-size: 1.6rem;
+     margin: 0px 15px;
+}
+
+header button a{
+     color: #fff;
+}
+
+button{
+     cursor: pointer;
+}
+
+/*----------------------------------Feedback Form Section--------------------*/
+
+.create-container{
+     position: fixed;
+     right: -100%;
+     top: 0;
+     width: 400px;
+     height: 100%;
+     background-color:#000;
+}
+
+.create-container #close-btn{
+     position: absolute;
+     width: 40px;
+     top: 10px;
+     right: 10px;
+     background-color: blue;
+     padding: 5px;
+     color: #fff;
+}
+
+.create-container.active{
+     right: 0;
+}
+
+.create-container form{
+     padding: 20px 40px;
+}
+
+.create-container form h1{
+     text-align: center;
+     color: #fff;
+     font-size: 1.6rem;
+     text-transform: uppercase;
+     font-weight: 400;
+     margin: 1rem 0rem;
+}
+
+form .input1{
+     width: 100%;
+     margin: 15px 0px;
+}
+
+form .input1 label{
+     color: rgba(240, 248, 255, 0.74);
+     margin: 4px 0px;
+     font-size: 1.1rem;
+}
+
+form .input1 input{
+     padding: 7px;
+     border: 2px solid #ffffff3a;
+     width: 100%;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 1.2rem;
+}
+
+form .input1 input:focus{
+     border: 2px solid orangered;
+}
+
+.create-container form .input1 textarea{
+     padding: 10px;
+     min-width: 100%;
+     min-height: 200px;
+     border: 2px solid #ffffff3a;
+     border-radius: 5px;
+     color: #fff;
+     font-size: 1.1rem;
+}
+
+form button{
+     width: 100%;
+     padding: 10px;
+     background-color: blue;
+     color: #fff;
+     border-radius: 10px;
+     text-transform: uppercase;
+     font-size: 1.2rem;
+}
+
+
+
+
+/*-----------------------------Home Container Section-----------------------*/
+
+.container{
+     padding: 2rem;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     margin-bottom: 4rem;
+}
+
+.contents{
+     text-align: left;
+     padding: 10px;
+     display: inline-block;
+     width: 300px;
+     height: 200px;
+     border: 1px solid rgba(255, 255, 255, 0.356);
+     background-color: #000;
+     border-radius: 5px;
+     box-shadow: 0px 0px 10px -5px white;
+     margin: 10px 5px;
+}
+
+.contents h1{
+     color: #fff;
+     font-size: 1rem;
+     padding-bottom: 5px;
+     border-bottom: 1px solid rgba(248, 248, 255, 0.322);
+}
+
+.contents .content{
+     width: 100%;
+}
+
+.content{
+     padding: 10px;
+     overflow: hidden;
+     overflow-y: auto;
+     width: 100%;
+     height: 80%;
+     color: #fff;
+     margin: 10px 0px;
+     text-indent: 20px;
+     text-align: justify;
+     letter-spacing: 1px;
+}
+
+
+/*--------------Login-Form --------from login.ejs-------------*/
+.login-container{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;   
+}
+
+.login-container .login-form{
+     width: 300px;
+     text-align: center;
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid gray;
+}
+
+.login-container .login-form .log-btns{
+     display: flex;
+}
+
+.login-container .login-form .log-btns a{
+     color: #fff;
+}
+
+.login-container .login-form h1{
+     font-size: 1.8rem;
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 500;
+     margin: 15px 0px;
+}
+
+.login-container .login-form input{
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ffffff3a;
+     border-radius: 10px;
+     margin:5px 0px;
+     color: #fff;
+     font-size: 1.3rem;
+}
+
+.login-container .login-form button{
+     width: 100%;
+     padding: 8px;
+     background-color: blue;
+     color: #fff;
+     font-size: 1.3rem;
+     text-transform: uppercase;
+     margin: 5px;
+     border-radius: 10px;
+}
+
+/*-----------------signup-form --- Signup container----------------*/
+.signup-form{
+     text-align: left;
+     padding: 20px;
+     border: 1px solid #ffffff3a;
+}
+
+.signup-form h1{
+     font-size: 1.8rem;
+     color: #fff;
+     text-transform: uppercase;
+     font-weight: 500;
+     margin: 15px 0px;
+}
+.signup-form .log-btns{
+     display: flex;
+}
+.signup-form .log-btns a{
+     color: #fff;
+}
+
+.signup-form .log-btns button{
+     margin: 5px;
+}
+
+
+.footer{
+     background-color: #000;
+     width: 100%;
+     text-align: center;
+     position: fixed;
+     z-index: 1000;
+     bottom: 0px;
+     padding: 10px 10px 20px 10px;
+}
+
+.footer p{
+     font-size: 1.1rem;
+     color: #ffffff7c;
+}
+
+.footer p a{
+     text-transform: uppercase;
+     color: yellow;
+}
+
+
+@media(max-width:700px){
+     html{
+          font-size: 80%;
+     }
+}
