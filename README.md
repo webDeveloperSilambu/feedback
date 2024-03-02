@@ -27,16 +27,12 @@
 
 ## Output : 
 
-    
-
-## Demo
-
-    
-
+        ![Screenshot (206)](https://github.com/webDeveloperSilambu/feedback/assets/97620286/bc5742bc-ac48-4055-ac93-4b183dc47752)
 
 
 
 ## Authors
+    Hi, I am an FullStack Webdeveloper . I am currently studying about mobile Application . If you want more information about me . Please cllick the following link. 
 
 - https://github.com/webDeveloperSilambu
 
